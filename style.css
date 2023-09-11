@@ -1,13 +1,14 @@
 :root {
     --main-text-color: #222;
 }
-  
+
 html, body {
     background-color: #f3f3f3;
     color: var(--main-text-color);
     padding: 0;
     margin: 0;
 }
+
 
 .header {
     background-color: white;
@@ -114,3 +115,21 @@ ol.lesson-list{
     background: #fff;
     color: #8bddf6;
   }
+
+
+  .button1 {
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    text-decoration:none;
+    max-width: 220px;
+    padding: 10px 15px;
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: rgb(149,202,252);
+}
+.button1:hover {
+    background: rgb(117,188,255);
+}
