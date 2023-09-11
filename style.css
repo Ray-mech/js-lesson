@@ -116,8 +116,13 @@ ol.lesson-list{
     color: #8bddf6;
   }
 
+.note-wrapper {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
 
-  .button1 {
+.button1 {
     border-radius: 10px;
     position: relative;
     display: flex;
