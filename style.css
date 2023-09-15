@@ -1,5 +1,6 @@
 :root {
     --main-text-color: #222;
+    --main-border-color: #8bddf6;
 }
 
 html, body {
@@ -12,42 +13,43 @@ html, body {
 
 .header {
     background-color: white;
-    display: flex;
-    left:0;
-    top:0;
     margin: 0;
-    width:100%;
     height: 55px;
-    padding: 10px 10px 10px 20px;
-    z-index:1001;
+    padding: 10px 0 10px 20px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
 }
 
 
 .list-container {
-    width: 500px;
+    max-width: 500px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 15px 50px 25px 50px;
     background-color: white;
+    border: solid 1px var(--main-border-color);
     border-radius: 15px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
 }
 
 .main-container {
-    width: calc(100% - 500px);
+    width: 60vw;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .lesson-container {
     width: 100%;
-    margin: auto;
     margin-top: 50px;
-    padding: 20px 80px 50px 80px;
+    padding: 20px 0 50px 0;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.lesson-container h1 {
+  margin-left: 36px;
+  margin-top: 2px;
+  margin-bottom: 10px;
 }
 
 .now-preparing {
@@ -80,7 +82,7 @@ ol.lesson-list{
     font-weight: bold;
     font-size:14px;
     line-height: 30px;
-    border: solid 1px #8bddf6;
+    border: solid 1px var(--main-border-color);
     border-radius:20px;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
@@ -98,7 +100,7 @@ ol.lesson-list{
     text-align: center;
     color: #fff;
     line-height:30px;
-    background: #8bddf6;
+    background: var(--main-border-color);
     border-radius: 50%;
     top: 50%;
     -moz-transform: translateY(-50%);
@@ -108,18 +110,22 @@ ol.lesson-list{
     transform: translateY(-50%);
   }
   ol.lesson-list li:hover{
-    background: #8bddf6;
+    background: var(--main-border-color);
     color: #fff;
   }
   ol.lesson-list li:hover:before{
     background: #fff;
-    color: #8bddf6;
+    color: var(--main-border-color);
   }
 
 .note-wrapper {
   width: 80%;
   margin: auto;
   margin-top: 40px;
+}
+
+.note-sub-wrapper {
+  margin-bottom: 45px;
 }
 
 .button1 {
